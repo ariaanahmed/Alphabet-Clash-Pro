@@ -1,5 +1,12 @@
 function continueGame() {
-
+    const alphabet = getRandomAlphabet();
+    
+    // set randomly generated alphabet to the screen
+    const currentAlphabetElement = document.getElementById('current-alphabet');
+    currentAlphabetElement.innerText = alphabet;
+    
+    setBackgroundColorById(alphabet)
+    
 }
 
 function play() {
@@ -7,6 +14,3 @@ function play() {
     showElementById('playground');
     continueGame();
 }
-
-
-// 3:21
