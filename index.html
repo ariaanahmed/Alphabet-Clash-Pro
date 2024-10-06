@@ -82,31 +82,31 @@
 
                 <!-- life and score -->
                 <div class="flex justify-between w-3/5">
-                    <button class="btn rounded-full bg-[#894189]">
+                    <button class="btn rounded-full bg-[#894189] text-white hover:text-black">
                         <span>Life</span>
                         <img src="./alphabet-clash-pro-resources/images/heart.png" alt="button-icon">
-                        <span>1</span>
+                        <span id="current-life">5</span>
                     </button>
 
-                    <button class="btn rounded-full bg-[#360490]">
+                    <button class="btn rounded-full bg-[#360490] text-white hover:text-black">
                         <span>Score</span>
                         <img src="./alphabet-clash-pro-resources/images/dollar.png" alt="button-icon">
-                        <span>1</span>
+                        <span id="current-score">0</span>
                     </button>
                 </div>
 
             </div>
         </section>
 
-        <!-- score section -->
-        <section class="score flex justify-center items-center pt-3">
-            <div class="flex flex-col justify-center items-center space-y-6 p-5 rounded-lg bg-[#ffffff33]"
-                style="display: none;">
+        <!-- final score section -->
+        <section id="final-score" class="flex justify-center items-center pt-3 hidden">
+            <div class="flex flex-col justify-center items-center space-y-6 p-5 rounded-lg bg-[#ffffff33]">
+                <h4>Game Over</h4>
                 <h1 class="text-8xl text-white">
                     <span class="font-semibold">Score:</span>
-                    <span>14</span>
+                    <span id="last-score">14</span>
                 </h1>
-                <button class="btn bg-white text-black hover:text-white">Play again</button>
+                <button onclick="play()" class="btn bg-white text-black hover:text-white">Play again</button>
                 <p class="font-semibold text-white">Practice makes you will a Pro</p>
             </div>
         </section>
